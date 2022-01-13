@@ -3,8 +3,7 @@
     position: relative;
     width: 100%;
     display:flex;
-    grid-template-columns: repeat(1,1fr);
-    
+    grid-template-columns: repeat(1,1fr);    
     justify-content:center;
     align-items:center;
     flex-wrap: wrap;
@@ -25,49 +24,55 @@
         padding: 30px;
         column-gap: 4rem;
         row-gap: 4rem;
-                
     }
 }
 
-
-
 .container .card{
     position:relative;
-    max-width: 400px;
-    height: 320px;    
-    background: #fff;
-    margin:30px 10px;
-    padding: 20px 20px;
-    display: flex;
-    flex-direction: column;
+    width: 350px;
+    height: 80px;    
+    background: #fff;    
+    padding: 5px 5px;
+    display: relative;
+    flex-direction: row;
     transition:0.5s ease-in-out;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-.container .card:hover{        
-    width: 500px;
+.container .card:hover{
+    width:500px;   
+    height:230px;
+    transition:0.5s ease-in-out; 
+       
 }
 
-
-.container .card .imgBx{
+.container .card .imgBx img{
     position:relative;
-    width:260px;
-    height:260px;
-    top:-60px;        
+    max-height: 100px; 
+    right:-250px;  
+                
 }
 
-.container .card .imgbx img {
-
-    max-width: 100%;
-    border-radius: 4px;
-    
-}
 
 .container .card:hover  img {
-
     opacity: 50%;
-    transition-delay: 0.2s; 
-    
+    transition-delay: 0.2s;      
+}
+
+.container .card .content_title{
+    position: relative;
+    right: 5rem;    
+    padding:5px 5px;
+    text-align: center;
+    color: rgb(49, 48, 48);
+    visibility: hidden;
+    opacity: 0;
+    transition:0.3s ease-in-out;
+}
+
+.container .card:hover .content_title{
+    opacity: 2;    
+    transition-delay: 0.3s;
 }
 
 .container .card .content{
@@ -80,34 +85,15 @@
     visibility: hidden;
     opacity: 0;
     transition:0.3s ease-in-out;
-
 }
 
 .container .card:hover .content{
     visibility: visible;
-    opacity: 2;
-    bottom: -14rem;
+    opacity: 2;    
     transition-delay: 0.8s;
 }
 
-.container .card .content_title{
-    position: relative;
-    margin-top: -140px;
-    padding:10px 15px;
-    text-align: center;
-    color: rgb(49, 48, 48);
-    visibility: hidden;
-    opacity: 0;
-    transition:0.3s ease-in-out;
 
-}
-
-.container .card:hover .content_title{
-    visibility: visible;
-    opacity: 2;
-    top: -100px;
-    transition-delay: 0.3s;
-}
 
 
 

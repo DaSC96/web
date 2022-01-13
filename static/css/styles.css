@@ -152,6 +152,8 @@ img{
     margin-bottom: var(--mb-5);
   }
 }
+
+
 .nav__item{
   margin-bottom: var(--mb-4);
 }
@@ -449,6 +451,11 @@ img{
 @media screen and (max-width: 640px) {
 
   .home__img {
+    width: 195px;
+    bottom: 0;
+  }
+
+  .work__img {
     width: 195px;
     bottom: 0;
   }
