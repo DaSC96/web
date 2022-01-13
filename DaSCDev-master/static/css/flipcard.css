@@ -1,0 +1,112 @@
+
+.container{
+    position: relative;
+    width: 100%;
+    display:flex;
+    grid-template-columns: repeat(1,1fr);
+    
+    justify-content:center;
+    align-items:center;
+    flex-wrap: wrap;
+    padding: 30px;
+    column-gap: 4rem;
+    row-gap: 4rem;
+}
+
+@media screen and (max-width: 800px){
+    .container{
+        position: relative;
+        width: 100%;
+        display:flex;
+        grid-template-columns: repeat(1,1fr);        
+        justify-content:center;
+        align-items:center;
+        flex-wrap: wrap;
+        padding: 30px;
+        column-gap: 4rem;
+        row-gap: 4rem;
+                
+    }
+}
+
+.container .card:hover{
+    height:420px;
+    
+}
+
+.container .card{
+    position:relative;
+    max-width: 400px;
+    height: 320px;
+    
+    background: #fff;
+    margin:30px 10px;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    transition:0.5s ease-in-out;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.container .card .imgBx{
+    position:relative;
+    width:260px;
+    height:260px;
+    top:-60px;        
+}
+
+.container .card .imgbx img {
+
+    max-width: 100%;
+    border-radius: 4px;
+    
+}
+
+.container .card:hover  img {
+
+    opacity: 50%;
+    transition-delay: 0.2s;
+  
+    
+}
+
+.container .card .content{
+    position: relative;
+    top: 1rem;
+    max-width:260px;
+    padding:5px 5px;
+    text-align: center;
+    color: rgb(49, 48, 48);
+    visibility: hidden;
+    opacity: 0;
+    transition:0.3s ease-in-out;
+
+}
+
+.container .card .content_title{
+    position: relative;
+    margin-top: -140px;
+    padding:10px 15px;
+    text-align: center;
+    color: rgb(49, 48, 48);
+    visibility: hidden;
+    opacity: 0;
+    transition:0.3s ease-in-out;
+
+}
+
+.container .card:hover .content_title{
+    visibility: visible;
+    opacity: 2;
+    top: -100px;
+    transition-delay: 0.3s;
+}
+
+.container .card:hover .content{
+    visibility: visible;
+    opacity: 2;
+    bottom: -14rem;
+    transition-delay: 0.8s;
+}
+
