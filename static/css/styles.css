@@ -448,7 +448,7 @@ img{
 }
 
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 800px) {
 
   .home__img {
     width: 195px;
@@ -458,6 +458,15 @@ img{
   .work__img {
     width: 195px;
     bottom: 0;
+  }
+
+  .section-title{
+    margin-bottom: var(--mb-6);
+    font-size: var(--big-font-size);
+  }
+  .section-title::after{
+    font-size: var(--big-font-size);
+    top: 3rem;
   }
   
 }
